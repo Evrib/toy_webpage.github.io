@@ -1,52 +1,34 @@
-/* Set the font family and background color for the entire document */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fffff8  ;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #FDF5E6; /* Old paper */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-/* Style the header */
 h1 {
-    text-align: center;
-    color: #111111 ;
-    margin-top: 30px;
-	margin-right: 38vw;
-	margin-left: 12vw;
+  margin-top: 50px;
 }
 
-/* Style the paragraph text */
-p {
-    color: #666;
-    font-size: 18px;
-    line-height: 1.5;
+#activity-suggestion {
+  font-size: 30px;
+  margin-top: 50px;
 }
 
-/* Style the button */
-button {
-    background-color: #111111 ;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-	margin-right: 38vw;
-	margin-left: 12vw;
+#generate-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #8B8378; /* Dark grayish brown */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
-/* Style the days container */
-#days {
-    margin-top: 20px;
-	margin-right: 38vw;
-	margin-left: 12vw;
-    border: 1px solid #111111 ;
-    padding: 20px;
-}
-
-/* Style the individual day elements */
-#days p {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-    color: #111111 ;
+#generate-button:hover {
+  background-color: #5F5A50; /* Dark brown */
 }
