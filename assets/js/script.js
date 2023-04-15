@@ -1,8 +1,6 @@
+
 // Get a reference to the button element
 var button = document.querySelector("button");
-
-// Define an array of possible dinner options
-var dinnerOptions = [	"Fläskpannkaka", 	"Bönröra med bulgur och krämfräsch", 	"Carbonara",	"kycklingschnitzel",	"linsgryta",	"halloumiburgare",	"Pasta med köttfärsSAUS",	"ät ute eller ngt idk",	"Kikärtsgryta",	"potatismos med falukorv",	"gaspacho haha nä men fan löksoppa eller ngt",	"Tacoooosss",	"Halloumiburgare",	"Varma mackor",];
 
 // Get a reference to the days container element
 var daysContainer = document.getElementById("days");
