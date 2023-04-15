@@ -6,17 +6,13 @@ button.addEventListener("click", function() {
   // Get a reference to the days container element
   var daysContainer = document.getElementById("days");
 
-  // Define an array of the days of the week
-  var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  // Get an array of the day elements
+  var dayElements = daysContainer.getElementsByTagName("p");
 
-  // Clear the days container
-  daysContainer.innerHTML = "";
-
-  // Loop through the days array and add each day to the container
-  for (var i = 0; i < days.length; i++) {
-    var dayElement = document.createElement("p");
-    var dayText = document.createTextNode(days[i]);
-    dayElement.appendChild(dayText);
-    daysContainer.appendChild(dayElement);
+  // Loop through the day elements and add "eat dinner!" to each one
+  for (var i = 0; i < dayElements.length; i++) {
+    var dayElement = dayElements[i];
+    var dayText = dayElement.textContent;
+    dayElement.textContent = dayText + " - eat dinner!";
   }
 });
