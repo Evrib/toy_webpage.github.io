@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Days of the Week</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h1>Days of the Week</h1>
+	<p>Click the button to display the days of the week:</p>
+	<button onclick="showDays()">Show Days</button>
+	<div id="days"></div>
+	
+	<script>
+		function showDays() {
+			var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+			var output = "";
+			for (var i = 0; i < days.length; i++) {
+				output += "<p>" + days[i] + "</p>";
+			}
+			document.getElementById("days").innerHTML = output;
+		}
+	</script>
+</body>
+</html>
